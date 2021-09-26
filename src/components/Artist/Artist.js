@@ -16,6 +16,7 @@ const Artist = (props) => {
             <div className="artist-img">
             <img src={img} alt="" />
             </div>
+            {/* artist details section */}
             <div className="details">
                 <h3>Name: {name}</h3>
                 <p>Profession: {profession}</p>

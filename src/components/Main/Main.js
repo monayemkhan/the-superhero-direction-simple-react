@@ -5,16 +5,17 @@ import Cart from '../Cart/Cart';
 import './Main.css'
 
 const Main = () => {
-    //useState
+    // use useState for artist and  cart
     const [artists, setArtists] = useState([]);
     const[cart, setCart] = useState([]);
+
     //useEffect for fetch data
     useEffect( () => {
         fetch('./artists.JSON')
         .then(res => res.json())
         .then(data => setArtists(data))
     }, [])
-    // handleAddToCart function
+    // handle add to cart function
     const handleAddToCart = (artist) => {
         const newCart = [...cart, artist];
         setCart(newCart);

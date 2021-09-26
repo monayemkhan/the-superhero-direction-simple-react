@@ -8,7 +8,7 @@ import './Artist.css';
 
 const Artist = (props) => {
     console.log(props.artist);
-    const {name, profession, sex, country, contract, img} = props.artist;
+    const {name, profession, gender, country, contract, img} = props.artist;
     const cartIcon = <FontAwesomeIcon icon={faCartPlus} /> 
     return (
         // artist section component 
@@ -20,7 +20,7 @@ const Artist = (props) => {
             <div className="details">
                 <h3>Name: {name}</h3>
                 <p>Profession: {profession}</p>
-                <p>Sex: {sex}</p>
+                <p>Gender: {gender}</p>
                 <p>Country: {country}</p>
                 <h4>Cost: ${contract}</h4>
             </div>

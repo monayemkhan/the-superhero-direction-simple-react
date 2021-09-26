@@ -17,7 +17,9 @@ const Main = () => {
     }, [])
     // handle add to cart function
     const handleAddToCart = (artist) => {
-        const newCart = [...cart, artist];
+        const newCartArray = [...cart, artist];
+        const uniqueCart = new Set(newCartArray);
+        const newCart = [...uniqueCart]
         setCart(newCart);
     }
 

@@ -1,0 +1,11 @@
+.main-container{
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+}
+.artist-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    border: 1px solid lightgrey;
+    margin: 10px;
+    border-radius: 5px;
+}

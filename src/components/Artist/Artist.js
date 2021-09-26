@@ -1,4 +1,5 @@
 import React from 'react';
+// import front-awesome and icon link
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCartPlus, faMobile } from '@fortawesome/free-solid-svg-icons'
 
@@ -10,6 +11,7 @@ const Artist = (props) => {
     const {name, profession, sex, country, contract, img} = props.artist;
     const cartIcon = <FontAwesomeIcon icon={faCartPlus} /> 
     return (
+        // artist section component 
         <div className="artist">
             <div className="artist-img">
             <img src={img} alt="" />

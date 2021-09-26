@@ -4,6 +4,7 @@ import Main from './components/Main/Main';
 
 function App() {
   return (
+    // all component added hare
     <div>
       <Header></Header>
       <Main></Main>

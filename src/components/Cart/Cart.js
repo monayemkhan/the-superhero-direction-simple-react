@@ -1,4 +1,5 @@
 import React from 'react';
+// import cart css file
 import './Cart.css';
 
 const Cart = (props) => {
@@ -10,19 +11,19 @@ const Cart = (props) => {
         name = name + artist.name;
     }
     return (
+        // cart section
         <div className="cart">
             <div>
-            <h2>Artist Added: {props.cart.length}</h2>
-            <h3>Total Cost: ${total}</h3>
+                <h2>Artist Added: {props.cart.length}</h2>
+                <h3>Total Cost: ${total}</h3>
             </div>
             
-                {
-                    cart.map(artist => <div className="select-artist"> 
-                    <h4> {artist.name}</h4> 
-                    </div> )
-                }
+            {
+                cart.map(artist => <div className="select-artist"> 
+                <h4>{artist.name}</h4> 
+                </div> )
+            }
                 
-            
             <button className="regular-btn">Conform Now</button>
         </div>
     );

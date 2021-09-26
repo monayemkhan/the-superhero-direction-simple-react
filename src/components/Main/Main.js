@@ -1,27 +1,31 @@
 import React, { useEffect, useState } from 'react';
+// import component file here 
 import Artist from '../Artist/Artist';
 import Cart from '../Cart/Cart';
 import './Main.css'
 
 const Main = () => {
+    //useState
     const [artists, setArtists] = useState([]);
     const[cart, setCart] = useState([]);
-
+    //useEffect for fetch data
     useEffect( () => {
         fetch('./artists.JSON')
         .then(res => res.json())
         .then(data => setArtists(data))
     }, [])
-
+    // handleAddToCart function
     const handleAddToCart = (artist) => {
         const newCart = [...cart, artist];
         setCart(newCart);
     }
 
     return (
+        // main section
         <div className="main-container">
             <div className="artist-container">
                 {
+                    // map artist
                     artists.map(artist => <Artist 
                         key={artist.key}
                         artist={artist}

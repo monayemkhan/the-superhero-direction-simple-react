@@ -1,3 +1,4 @@
+/* cart section styles here */
 .cart {
     text-align: center;
     border: 1px solid rgb(183, 212, 20);
@@ -9,4 +10,7 @@
 }
 .cart:hover {
     box-shadow: 0 3px 10px rgb(150, 167, 59);
+}
+.cart h3 {
+    color: rgb(211, 27, 27);
 }
